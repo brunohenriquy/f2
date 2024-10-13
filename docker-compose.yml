@@ -1,0 +1,9 @@
+services:
+  f2:
+    container_name: f2
+    build: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./data:/data
+    working_dir: /data
